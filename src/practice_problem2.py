@@ -3,8 +3,8 @@ PRACTICE Exam 2, practice_problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and John Neill.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # Students:
@@ -32,7 +32,7 @@ import time
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    run_test_practice_problem2a()
+    #run_test_practice_problem2a()
     run_test_practice_problem2b()
 
 
@@ -44,7 +44,7 @@ def main():
 def run_test_practice_problem2a():
     """ Tests the   practice_problem2a  function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  practice_problem2a  function defined below.
     #   Include at least **   4    ** tests that, taken together,
     #   would form a    ** REASONABLY GOOD test set **
@@ -59,8 +59,45 @@ def run_test_practice_problem2a():
     print('Testing the   practice_problem2a   function:')
     print('--------------------------------------------------')
 
+    #Test 1
+    print("Test 1: ")
+    sequence = [3, 2, 5, 4]
+    expected = [4, 3, 6, 5]
+    actual = practice_problem2a(sequence, 1)
+    print("Expected: " + str(expected))
+    print("Actual: " + str(actual))
+
+    # Test 2
+    print("Test 2: ")
+    expected = [36, 22, 5, 4, 19, 238]
+    sequence = [16, 2, -15, -16, -1, 218]
+    actual = practice_problem2a(sequence, 20)
+    print("Expected: " + str(expected))
+    print("Actual: " + str(actual))
+
+    # Test 3
+    print("Test 3: ")
+    expected = [1, 2, 20, 9, 39]
+    sequence = [1, 2, 20, 9, 39]
+    actual = practice_problem2a(sequence, 0)
+    print("Expected: " + str(expected))
+    print("Actual: " + str(actual))
+
+    # Test 4
+    print("Test 4: ")
+    expected = [8]
+    sequence = [200]
+    actual = practice_problem2a(sequence, -192)
+    print("Expected: " + str(expected))
+    print("Actual: " + str(actual))
+
 
 def practice_problem2a(sequence, delta):
+
+    for k in range(len(sequence)):
+        sequence[k] += delta
+    return sequence
+
     """
     What comes in:
       -- A sequence of integers, e.g. ([2, 10, 5, -20, 8])
@@ -79,7 +116,7 @@ def practice_problem2a(sequence, delta):
       :type delta:    int
     """
     ###########################################################################
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     WRITE THE TESTS FIRST (above).
     ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -168,6 +205,16 @@ def run_test_practice_problem2b():
 
 
 def practice_problem2b(sequence):
+    yeeet = ''
+    for k in range(len(sequence)):
+        if len(sequence[k]) == 0:
+            yeeet += ''
+        else:
+            yeet = sequence[k]
+            yeeet += yeet[0]
+
+    return yeeet
+
     """
     What comes in:
       -- A sequence of strings, e.g. ('hello', 'Bye', 'ok joe')
@@ -187,7 +234,7 @@ def practice_problem2b(sequence):
       :type sequence: [str]
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
