@@ -3,8 +3,8 @@ PRACTICE Exam 2, practice_problem 3.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and John Neill.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # Students:
@@ -35,10 +35,10 @@ import rosegraphics as rg
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_practice_problem3a()
-    run_test_practice_problem3b()
-    run_test_practice_problem3c()
-    run_test_practice_problem3d()
-    run_test_practice_problem3e()
+    #run_test_practice_problem3b()
+    #run_test_practice_problem3c()
+    #run_test_practice_problem3d()
+    #run_test_practice_problem3e()
 
 
 def is_prime(n):
@@ -154,6 +154,15 @@ def run_test_practice_problem3a():
 
 
 def practice_problem3a(circles):
+
+    seq = []
+    mult = 0
+
+    for k in range(len(circles)):
+        seq.append(circles[k].center.x)
+    for k in range
+
+
     """
     What comes in:  A sequence of rg.Circles.
     What goes out:  Returns the product of the x-coordinates
